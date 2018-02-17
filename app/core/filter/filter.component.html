@@ -1,0 +1,15 @@
+<div>
+  <div ng-repeat="(key, value) in $ctrl.filter">
+    <label>
+      {{key | capitalize}}:
+    </label>
+    <input type="text" ng-model="$ctrl.filter[key]" ng-change="$ctrl.onFilter({filter: $ctrl.filter})">
+    <br>
+  </div>
+  <label>Order by:
+    <select ng-model="$ctrl.orderBy" ng-change="$ctrl.onOrderBy({order: $ctrl.orderBy})">
+      <option value="">No order</option>
+      <option ng-repeat="option in $ctrl.options" ng-value="option.value">{{option.text}}</option>
+    </select>
+  </label>
+</div>

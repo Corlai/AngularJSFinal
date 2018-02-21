@@ -1,0 +1,5 @@
+<b>Posts</b>
+<button type="button" ng-click="$ctrl.createPost()">Create Post</button>
+<br>
+<filter filter="$ctrl.fields" options="$ctrl.options" on-order-by="$ctrl.onOrderBy(order)" on-filter="$ctrl.onFilter(filter)"></filter>
+<post-list posts="$ctrl.posts" filter="$ctrl.filter" order-by="$ctrl.orderBy"></post-list>

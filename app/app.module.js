@@ -3,9 +3,11 @@
 
   angular
     .module('app', [
-      // 'app.books',
-      // 'app.authors',
+      'app.comments',
+      'app.authors',
+      'app.posts',
       'app.users',
+      'app.books',
       'ngRoute'
     ]);
 })(window.angular);

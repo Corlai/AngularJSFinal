@@ -1,0 +1,4 @@
+<div ng-repeat="book in $ctrl.books | filter:$ctrl.filter | orderBy:$ctrl.orderBy">
+    <book book="book"></book>
+    <button type="button" ng-click="$ctrl.viewBookDetails(book.ID)" class="btn btn-primary">Detalles</button>
+  </div>

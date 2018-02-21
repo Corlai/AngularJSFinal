@@ -33,19 +33,20 @@
 
     function onInit() {
       ctrl.fields = {
-        name: '',
-        username: ''
+        ID: '',
+        UserName: '',
+        Password: ''
       };
       ctrl.options = [
         {
-          text: 'Name',
-          value: 'name'
+          text: 'ID',
+          value: 'ID'
         }, {
-          text: 'Username',
-          value: 'username'
+          text: 'Nombre de Usuario',
+          value: 'UserName'
         }, {
-          text: 'Email',
-          value: 'email'
+          text: 'Contraseña',
+          value: 'Password'
         }
       ];
 

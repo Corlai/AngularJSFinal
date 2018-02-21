@@ -1,6 +1,19 @@
-<hr>
-<div>
-  Username: {{$ctrl.user.UserName}}
+<!-- <hr>
+<div class="alert alert-dark" role="alert">
+  <strong>Username: {{$ctrl.user.UserName}}</strong>
   <br> ID: {{$ctrl.user.ID}}
   <br> Password: {{$ctrl.user.Password}}
+</div> -->
+
+<hr>
+<div class="alert alert-dark" role="alert">
+	<strong>Username: {{$ctrl.user.UserName}}</strong> 
+</div>
+
+<div class="alert alert-light" role="alert">
+	<p><span class="badge badge-secondary">ID:</span> {{$ctrl.user.ID}}</p>
+</div>
+<div class="alert alert-light" role="alert">
+	<p><span class="badge badge-secondary">Password:</span> {{$ctrl.user.Password}}</p>
+</div>
 </div>

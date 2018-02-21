@@ -8,7 +8,7 @@
   function config($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        template: '<b>Ejemplo de front-end para la API REST <a href="https://jsonplaceholder.typicode.com">JSONPlaceholder</a></b>'
+        template: '<div class="container"><b>Ejemplo de front-end para la API REST <img src="img/agular-webapi.png" class="img-fluid" /></b></div>'
       })
       .when('/users', {
         template: '<user-page></user-page>'
@@ -28,6 +28,18 @@
       .when('/comments', {
         template: '<comment-page></comment-page>'
       })
+      .when('/authors', {
+        template: '<author-page></author-page>'
+    })
+      .when('/authors/:authorId', {
+        template: '<author-detail></author-detail>'
+    })
+    .when('/books', {
+      template: '<book-page></book-page>'
+  })
+  .when('/books/:id', {
+    template: '<book-detail></book-detail>'
+})
       .otherwise('/');
 
     $locationProvider.html5Mode(true);

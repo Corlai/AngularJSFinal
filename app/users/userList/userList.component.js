@@ -24,10 +24,5 @@
 
   function UserListController($location) {
     var ctrl = this;
-    ctrl.viewUserDetails = viewUserDetails;
-
-    function viewUserDetails(userId) {
-      $location.path('/users/' + userId);
-    }
   }
 })(window.angular);

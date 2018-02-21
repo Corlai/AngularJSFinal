@@ -15,21 +15,24 @@
     var service = {
       getUser: getUser,
       getUsers: getUsers,
+      //getUserPosts : getUserPosts
     };
 
     return service;
 
     function getUsers() {
-      return $http.get(urlRoot + 'Users/')
+      return $http.get(urlRoot + 'users/')
         .then(complete)
         .catch(failed);
     }
 
     function getUser(userId) {
-      return $http.get(urlRoot + 'Users/' + userId)
+      return $http.get(urlRoot + 'users/' + userId)
         .then(complete)
         .catch(failed);
     }
+
+
 
     function complete(response) {
       return response.data;

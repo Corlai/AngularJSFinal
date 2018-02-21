@@ -3,9 +3,7 @@
 
   angular
     .module('app', [
-      'app.comments',
       'app.authors',
-      'app.posts',
       'app.users',
       'app.books',
       'ngRoute'
